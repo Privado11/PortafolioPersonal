@@ -3,11 +3,8 @@ import { Link } from 'react-scroll';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { FaReact } from 'react-icons/Fa'
+import { FaReact, FaNodeJs, FaJava, FaPython} from 'react-icons/Fa'
 import { TbBrandNextjs } from 'react-icons/tb'
-import { FaNodeJs } from 'react-icons/Fa'
-import { FaJava } from 'react-icons/Fa'
-import { FaPython } from 'react-icons/Fa'
 import { SiPostgresql } from 'react-icons/si'
 import { AiFillGithub } from 'react-icons/ai'
 
@@ -20,7 +17,7 @@ function About() {
         {name: 'Node.js', icon: <FaNodeJs/>}, 
         {name: 'Java', icon: <FaJava/>}, 
         {name: 'Python', icon: <FaPython/>}, 
-        {name: 'postgreSQL', icon: <SiPostgresql/>}, 
+        {name: 'PostgreSQL', icon: <SiPostgresql/>}, 
         {name: 'GIT', icon: <AiFillGithub/>}
     ];
 
@@ -35,7 +32,7 @@ function About() {
     };
 
   return (
-    <main className='main__about'>
+    <main>
         <div className='about__content'>
             <h2 className='about__title'>Sobre mí</h2>
             <div className='about__description'>

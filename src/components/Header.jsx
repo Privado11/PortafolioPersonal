@@ -17,7 +17,7 @@ function Header() {
           <ul className='header__navBar-menu'>
             <li><Link to="Home" smooth={true}>Inicio</Link></li>
             <li><Link to="About" smooth={true}>Sobre mí</Link></li>
-            <li><Link to="Proyectos" smooth={true}>Proyectos</Link></li>
+            <li><Link to="Projects" smooth={true}>Proyectos</Link></li>
             <li><Link to="Contacto" smooth={true}>Contáctame</Link></li>
           </ul>
         </div>
