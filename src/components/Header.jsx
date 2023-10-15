@@ -18,7 +18,7 @@ function Header() {
             <li><Link to="Home" smooth={true}>Inicio</Link></li>
             <li><Link to="About" smooth={true}>Sobre mí</Link></li>
             <li><Link to="Projects" smooth={true}>Proyectos</Link></li>
-            <li><Link to="Contacto" smooth={true}>Contáctame</Link></li>
+            <li><Link to="Contact" smooth={true}>Contáctame</Link></li>
           </ul>
         </div>
       </div>

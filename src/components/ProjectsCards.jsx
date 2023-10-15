@@ -9,11 +9,7 @@ function ProjectsCards({ titulo, descripcion, link }) {
 
 
   return (
-    <Card
-        className="projects__card"
-        onMouseEnter={() => setHovered(true)}
-        onMouseLeave={() => setHovered(false)}
-    >
+    <Card className="projects__card">
         <CardContent className='projects__card-content'>
             <div className='projects__card-content-img'>
                 <img className='projects__card-img' src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&fit=crop&w=667&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="Imagen del proyecto" />
