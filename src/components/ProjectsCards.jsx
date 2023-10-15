@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import '../styles/ProjectsCards.css';
 import logo from '../assets/logo.png';
 
-function ProjectsCards({ titulo, descripcion }) {
+function ProjectsCards({ titulo, descripcion, link }) {
 
 
   return (
@@ -26,7 +26,7 @@ function ProjectsCards({ titulo, descripcion }) {
                     {descripcion}
                 </Typography>
                 <div className='projects__card-content-btn'>
-                    <a href="#">Ver proyecto</a>
+                    <a href={link}>Ver proyecto</a>
                 </div>
             </div>
         </CardContent>

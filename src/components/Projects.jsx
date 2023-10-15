@@ -4,32 +4,40 @@ import { ProjectsCards } from './ProjectsCards';
 import '../styles/Projects.css';
 
 function Projects() {
+
   const proyectos = [
     {
       titulo: 'Proyecto 1',
       descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.',
+      link: '', 
     },
     {
       titulo: 'Proyecto 2',
       descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.',
+      link: '', 
     },
     {
       titulo: 'Proyecto 3',
       descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.',
+      link: '', 
     },
     {
       titulo: 'Proyecto 4',
       descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.',
+      link: '', 
     },
     {
       titulo: 'Proyecto 5',
       descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.',
+      link: '', 
     },
     {
       titulo: 'Proyecto 6',
       descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.',
+      link: '', 
     },
   ];
+  
 
   const settings = {
     infinite: true,    
@@ -41,7 +49,7 @@ function Projects() {
   };
 
   return (
-    <main className='main__projects'>
+    <main>
       <div className='projects__content'>
         <h2 className='projects__tittle'>Proyectos</h2>
         <div className='projects__description'>
