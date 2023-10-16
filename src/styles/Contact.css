@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 9rem 5rem;
+  padding: 7rem 5rem;
 }
 
 .contact__content h2 {
@@ -22,13 +22,13 @@
 .contact__description-text {
   font-size: 1.6rem;
   font-weight: 400;
-  text-align: justify;
+  text-align: center;
 }
 
 .contanct__content-form {
   margin-top: 1.5rem;
   display: grid;
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   flex-direction: column;
   width: 100%;
   max-width: 60rem;
@@ -43,6 +43,14 @@
 
 .contact__content-form-input input {
   font-size: 1.4rem;
+}
+
+.contact__content-form-input-message input {
+  width: 100%;
+  height: 10rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
 }
 
 .contact__content-form-input span {

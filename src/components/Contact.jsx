@@ -61,6 +61,8 @@ function Contact() {
             datos
           );
           console.log("Correo enviado:", response.data);
+          setDatos(valoresInicialesFormulario);
+          setTextButton("Enviar");
         })
         .catch((validationErrors) => {
           const newErrors = {};
@@ -68,7 +70,6 @@ function Contact() {
             newErrors[error.path] = error.message;
           });
           setErrors(newErrors);
-          setTextButton("Enviar");
         });
     } catch (error) {
       console.error("Error al enviar el correo:", error);
@@ -81,10 +82,7 @@ function Contact() {
         <h2 className="contact__tittle">Contáctame</h2>
         <div className="contact__description">
           <p className="contact__description-text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni,
-            perspiciatis, rem voluptates tempore totam impedit ea natus sed
-            ipsam dignissimos nisi cum fugit eaque quos nam ullam iusto in
-            praesentium?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           </p>
         </div>
         <form onSubmit={enviarCorreo} className="contanct__content-form">
@@ -130,7 +128,7 @@ function Contact() {
               variant="outlined"
               value={datos.mensaje}
               onChange={(e) => actualizarDatos("mensaje", e.target.value)}
-              className="contact__content-form-input"
+              className="contact__content-form-input contact__content-form-input-message"
             />
             {errors.mensaje && (
               <Typography color="error">{errors.mensaje}</Typography>
