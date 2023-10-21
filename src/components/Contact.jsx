@@ -57,7 +57,7 @@ function Contact() {
         .validate(datos, { abortEarly: false })
         .then(async () => {
           const response = await axios.post(
-            "http://localhost:3000/enviar-correo",
+            "https://servidor-web-correos.onrender.com/enviar-correo",
             datos
           );
           console.log("Correo enviado:", response.data);

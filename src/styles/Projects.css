@@ -30,3 +30,21 @@
   width: 100%;
   max-width: 60rem;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: blue;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #000;
+}
+
+.swiper-pagination-bullet {
+  border: 2px solid #fff;
+}
