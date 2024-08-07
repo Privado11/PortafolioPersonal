@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import {
   TextField,
@@ -9,8 +9,10 @@ import {
 } from "@mui/material";
 import * as yup from "yup";
 import "../styles/Contact.css";
+import { Alerta } from "./Alerta";
 
 function Contact() {
+  const [showAlert, setShowAlert] = useState(false);
   const validacionesFormulario = yup.object().shape({
     nombre: yup.string().required("El nombre es obligatorio"),
     correo: yup
@@ -49,6 +51,29 @@ function Contact() {
     });
   };
 
+  useEffect(() => {
+    axios
+      .get("https://servidor-web-correos.onrender.com/ping")
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.error("Error al hacer ping al servidor:", error);
+      });
+    const pingServer = setInterval(() => {
+      axios
+        .get("https://servidor-web-correos.onrender.com/ping")
+        .then((response) => {
+          console.log(response.data);
+        })
+        .catch((error) => {
+          console.error("Error al hacer ping al servidor:", error);
+        });
+    }, 300000);
+
+    return () => clearInterval(pingServer);
+  }, []);
+
   const enviarCorreo = async (event) => {
     event.preventDefault();
     setTextButton("Enviando...");
@@ -62,6 +87,7 @@ function Contact() {
           );
           console.log("Correo enviado:", response.data);
           setDatos(valoresInicialesFormulario);
+          setShowAlert(true);
           setTextButton("Enviar");
         })
         .catch((validationErrors) => {
@@ -80,12 +106,18 @@ function Contact() {
     <main className="main__contact">
       <Container className="contact__content">
         <h2 className="contact__tittle">Contáctame</h2>
+
         <div className="contact__description">
           <p className="contact__description-text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Estoy disponible para cualquier consulta, colaboración o proyecto en
+            el que pueda ser de ayuda. Si necesitas asistencia o tienes alguna
+            pregunta, no dudes en ponerte en contacto conmigo. Espero con
+            interés la posibilidad de trabajar juntos.
           </p>
         </div>
+
         <form onSubmit={enviarCorreo} className="contanct__content-form">
+          {showAlert && <Alerta onClose={() => setShowAlert(false)} />}
           <FormControl>
             <TextField
               label="Nombre"

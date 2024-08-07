@@ -36,6 +36,13 @@
   font-weight: 700;
   border-radius: 0.5rem;
   cursor: pointer;
+  transition: color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.about__btn-container:hover {
+  color: #9700ff;
+  box-shadow: 0 0 10px rgba(151, 0, 255, 0.5);
 }
 
 .about__skills-title {
@@ -74,4 +81,35 @@
   font-size: 1.6rem;
   text-align: center;
   margin-top: 0;
+}
+
+@media (max-width: 600px) {
+  .about__content {
+    padding: 10rem 2rem;
+  }
+
+  .about__content h2 {
+    margin-bottom: 1rem;
+  }
+
+  .about__btn-container {
+    margin-top: 1rem;
+  }
+
+  .about__description,
+  .about__skills {
+    max-width: 100%;
+  }
+
+  .about__description {
+    line-height: 3rem;
+  }
+
+  .about__skills-title {
+    margin-top: 4rem;
+  }
+
+  .about__skills {
+    margin-top: 2rem;
+  }
 }

@@ -28,7 +28,7 @@
 .contanct__content-form {
   margin-top: 1.5rem;
   display: grid;
-  grid-gap: 1rem;
+  gap: 1rem;
   flex-direction: column;
   width: 100%;
   max-width: 60rem;
@@ -57,4 +57,31 @@
   padding: 0 0.7rem !important;
   width: 100%;
   font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .main__contact .contact__content {
+    padding: 10rem 2rem;
+  }
+
+  .contact__content h2 {
+    margin-bottom: 1rem;
+  }
+
+  .contact__description {
+    line-height: 3rem;
+  }
+
+  .contanct__content-form {
+    width: 90%;
+    height: 100%;
+  }
+
+  .contact__content-form-btn {
+    font-size: 1.5rem !important;
+  }
+
+  .contanct__content-form {
+    gap: 2rem;
+  }
 }

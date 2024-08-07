@@ -48,3 +48,23 @@
 .swiper-pagination-bullet {
   border: 2px solid #fff;
 }
+
+@media (max-width: 600px) {
+  .projects__content {
+    padding: 10rem 1rem;
+  }
+
+  .projects__content h2 {
+    margin-bottom: 1rem;
+  }
+
+  .projects__description {
+    max-width: 100%;
+  }
+
+  .projects__container-cards {
+    margin-top: 0rem;
+    width: 100%;
+    max-width: 100%;
+  }
+}

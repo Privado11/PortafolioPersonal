@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import "../styles/Header.css";
+import { FiMenu } from "react-icons/fi";
+import { AiOutlineClose } from "react-icons/ai";
 import logo from "../assets/logo.png";
+import "../styles/Header.css";
 
-function Header() {
+function Header({ selectedSection, section }) {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [selectedItem, setSelectedItem] = useState("");
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const handledSelected = (item) => {
+    setSelectedItem(item);
+    setMenuOpen(!menuOpen);
+    selectedSection(item);
+  };
+
+  useEffect(() => {
+    setSelectedItem(section);
+  }, [section]);
+
   return (
     <header>
       <div className="header__content">
@@ -14,26 +33,41 @@ function Header() {
           <span className="header__logo-text">Walter Jiménez</span>
         </div>
         <div className="header__navbar">
-          <ul className="header__navBar-menu">
+          <button className="header__navbar-btn" onClick={() => toggleMenu()}>
+            <span>{menuOpen ? <AiOutlineClose /> : <FiMenu />}</span>
+          </button>
+          <ul className={`header__navbar-menu ${menuOpen ? "open" : ""}`}>
             <li>
-              <Link to="Home" smooth={true}>
+              <a
+                onClick={() => handledSelected("Home")}
+                className={selectedItem == "Home" ? "selected" : ""}
+              >
                 Inicio
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="About" smooth={true}>
+              <a
+                onClick={() => handledSelected("About")}
+                className={selectedItem == "About" ? "selected" : ""}
+              >
                 Sobre mí
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="Projects" smooth={true}>
+              <a
+                onClick={() => handledSelected("Projects")}
+                className={selectedItem == "Projects" ? "selected" : ""}
+              >
                 Proyectos
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="Contact" smooth={true}>
+              <a
+                onClick={() => handledSelected("Contact")}
+                className={selectedItem == "Contact" ? "selected" : ""}
+              >
                 Contáctame
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
