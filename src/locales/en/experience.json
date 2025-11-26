@@ -14,22 +14,30 @@
       "period": "2025",
       "description": "Complete frontend development of an institutional platform for mobility and transit management.",
       "highlights": [
-        "Creation of interfaces, forms and flows using Angular with modular architecture",
+        "Creation of interfaces, forms and flows using Angular with a modular architecture",
         "Implementation of reusable components, centralized services and REST API consumption",
-        "Construction of traffic tickets, audit, devices, PDF reports and user administration modules"
+        "Development of modules for traffic tickets, audits, devices, PDF reports and user administration",
+        "Frontend development under a microfrontend architecture using Module Federation for scalable and decoupled integration"
       ],
-      "technologies": ["Angular", "TypeScript", "CSS", "REST API"]
+      "technologies": [
+        "Angular",
+        "TypeScript",
+        "CSS",
+        "REST API",
+        "Microfrontends",
+        "Module Federation"
+      ]
     },
     {
       "type": "personal",
       "role": "Fullstack Developer",
       "company": "Personal Projects",
       "period": "2023 – 2025",
-      "description": "Development of complete web applications integrating frontend, backend and database.",
+      "description": "Development of complete web applications integrating frontend, backend and databases.",
       "highlights": [
-        "Creation of Piranha Planner (collaborative task manager with authentication, messaging, files and statistics)",
-        "Construction of a modern landing page for Piranha Planner with React and Vite",
-        "Implementation of authentication, file handling, comments, notifications and roles"
+        "Creation of Piranha Planner (collaborative task manager with authentication, messaging, files and advanced statistics)",
+        "Development of a modern landing page for Piranha Planner using React and Vite",
+        "Implementation of authentication, file handling, comments, notifications and role-based access control"
       ],
       "technologies": [
         "React",

@@ -31,10 +31,18 @@
     },
     {
       "title": "Mobility Management System — Administrative Platform",
-      "description": "Professional web platform built with Angular for managing mobility and traffic-related processes. I worked as the frontend developer, implementing all UI screens, navigation, reusable components, forms, and API integration. The system includes modules for traffic ticket management, auditing, devices, PDF report generation, user administration, and a general dashboard. Developed using a modular architecture, centralized services, and custom styling with pure CSS.",
+      "description": "Professional web platform built with Angular for managing mobility and traffic-related processes. I worked as the frontend developer, implementing all UI screens, navigation, reusable components, forms, and API integration. The system includes modules for traffic ticket management, auditing, devices, PDF report generation, user administration, and a general dashboard. Developed under a microfrontend architecture using Module Federation to ensure scalable, decoupled, and maintainable integration across different parts of the platform. Built with a modular architecture, centralized services, and custom styling using pure CSS.",
       "link": "https://appcentral.shell.sapenlinea.com.co/login",
       "repository": "",
-      "tech": ["Angular", "TypeScript", "CSS", "REST API", "JWT"],
+      "tech": [
+        "Angular",
+        "TypeScript",
+        "CSS",
+        "REST API",
+        "JWT",
+        "Microfrontends",
+        "Module Federation"
+      ],
       "status": "completed",
       "release": "stable",
       "imageKey": "plataformaCentral"

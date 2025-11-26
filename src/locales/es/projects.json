@@ -31,10 +31,18 @@
     },
     {
       "title": "Sistema de Gestión de Movilidad — Plataforma Administrativa",
-      "description": "Aplicación profesional desarrollada en Angular para la gestión integral de procesos de movilidad y tránsito. Participé como desarrollador frontend, implementando las interfaces, navegación, formularios, componentes reutilizables y consumo de APIs. La plataforma incluye módulos de comparendos, auditoría, dispositivos, reportes PDF, administración de usuarios y un dashboard general. Se trabajó con arquitectura modular, servicios centralizados y estilos personalizados con CSS puro.",
+      "description": "Aplicación profesional desarrollada en Angular para la gestión integral de procesos de movilidad y tránsito. Participé como desarrollador frontend, implementando interfaces, navegación, formularios, componentes reutilizables y consumo de APIs. La plataforma fue construida bajo una arquitectura de microfrontends utilizando Module Federation para permitir una integración escalable, desacoplada y mantenible. Incluye módulos de comparendos, auditoría, dispositivos, reportes PDF, administración de usuarios y un dashboard general.",
       "link": "https://appcentral.shell.sapenlinea.com.co/login",
       "repository": "",
-      "tech": ["Angular", "TypeScript", "CSS", "REST API", "JWT"],
+      "tech": [
+        "Angular",
+        "TypeScript",
+        "CSS",
+        "REST API",
+        "JWT",
+        "Microfrontends",
+        "Module Federation"
+      ],
       "status": "completed",
       "release": "stable",
       "imageKey": "plataformaCentral"

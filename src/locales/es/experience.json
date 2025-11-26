@@ -16,9 +16,17 @@
       "highlights": [
         "Creación de interfaces, formularios y flujos usando Angular con arquitectura modular",
         "Implementación de componentes reutilizables, servicios centralizados y consumo de APIs REST",
-        "Construcción de módulos de comparendos, auditoría, dispositivos, reportes PDF y administración de usuarios"
+        "Construcción de módulos de comparendos, auditoría, dispositivos, reportes PDF y administración de usuarios",
+        "Desarrollo bajo arquitectura de microfrontends utilizando Module Federation para una integración escalable y desacoplada"
       ],
-      "technologies": ["Angular", "TypeScript", "CSS", "REST API"]
+      "technologies": [
+        "Angular",
+        "TypeScript",
+        "CSS",
+        "REST API",
+        "Microfrontends",
+        "Module Federation"
+      ]
     },
     {
       "type": "personal",
