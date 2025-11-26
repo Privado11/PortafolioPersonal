@@ -27,7 +27,13 @@ const Navbar = ({ setErrors }) => {
 
   const updateActiveLinkFromHash = () => {
     const hash = getCurrentHash();
-    const validSections = ["home", "skills", "projects", "contact"];
+    const validSections = [
+      "home",
+      "skills",
+      "experience",
+      "projects",
+      "contact",
+    ];
     if (validSections.includes(hash)) {
       setActiveLink(hash);
     }
@@ -36,7 +42,7 @@ const Navbar = ({ setErrors }) => {
   useEffect(() => {
     updateActiveLinkFromHash();
 
-    const sections = ["home", "skills", "projects", "contact"];
+    const sections = ["home", "skills", "experience", "projects", "contact"];
 
     const observerOptions = {
       root: null,
@@ -129,20 +135,25 @@ const Navbar = ({ setErrors }) => {
       href: "#skills",
     },
     {
+      name: "experience",
+      label: t("navigation.experience"),
+      href: "#experience",
+    },
+    {
       name: "projects",
       label: t("navigation.projects"),
       href: "#projects",
     },
   ];
 
-   const downloadCV = () => {
-     const link = document.createElement("a");
-     link.href = cvFile;
-     link.download = "CV-Walter-Jimenez.pdf";
-     document.body.appendChild(link);
-     link.click();
-     document.body.removeChild(link);
-   };
+  const downloadCV = () => {
+    const link = document.createElement("a");
+    link.href = cvFile;
+    link.download = "CV-Walter-Jimenez.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <nav

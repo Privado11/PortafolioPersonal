@@ -1,0 +1,44 @@
+{
+  "title": "Experiencia",
+  "subtitle": "Mi trayectoria profesional y proyectos personales que demuestran mi capacidad para desarrollar soluciones completas y funcionales.",
+  "types": {
+    "professional": "Experiencia Profesional",
+    "personal": "Proyectos Personales"
+  },
+  "experienceList": [
+    {
+      "type": "professional",
+      "role": "Desarrollador Frontend",
+      "company": "Shell – SAP en Línea",
+      "location": "Proyecto Profesional",
+      "period": "2025",
+      "description": "Desarrollo del frontend completo de una plataforma institucional para la gestión de movilidad y tránsito.",
+      "highlights": [
+        "Creación de interfaces, formularios y flujos usando Angular con arquitectura modular",
+        "Implementación de componentes reutilizables, servicios centralizados y consumo de APIs REST",
+        "Construcción de módulos de comparendos, auditoría, dispositivos, reportes PDF y administración de usuarios"
+      ],
+      "technologies": ["Angular", "TypeScript", "CSS", "REST API"]
+    },
+    {
+      "type": "personal",
+      "role": "Desarrollador Fullstack",
+      "company": "Proyectos Personales",
+      "period": "2023 – 2025",
+      "description": "Desarrollo de aplicaciones web completas integrando frontend, backend y base de datos.",
+      "highlights": [
+        "Creación de Piranha Planner (gestor de tareas colaborativo con autenticación, mensajes, archivos y estadísticas)",
+        "Construcción de una landing page moderna para Piranha Planner con React y Vite",
+        "Implementación de autenticación, manejo de archivos, comentarios, notificaciones y roles"
+      ],
+      "technologies": [
+        "React",
+        "Node.js",
+        "Spring Boot",
+        "Supabase",
+        "PostgreSQL",
+        "JWT"
+      ]
+    }
+  ]
+}

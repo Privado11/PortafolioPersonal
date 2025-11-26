@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Experience from "./components/Experience";
 
 function App() {
   const [errors, setErrors] = useState({});
@@ -16,6 +17,7 @@ function App() {
       <NavBar setErrors={setErrors} />
       <Banner />
       <Skills />
+      <Experience />
       <Projects />
       <Contact errors={errors} setErrors={setErrors} />
       <Footer />
