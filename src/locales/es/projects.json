@@ -1,6 +1,6 @@
 {
   "title": "Proyectos",
-  "subtitle": "Estos son algunos de los proyectos que he realizado. Cada uno de ellos ha sido una oportunidad para aprender nuevas tecnologías y habilidades, y para aplicarlas en la creación de soluciones innovadoras.",
+  "subtitle": "Estos son algunos de los proyectos que he desarrollado. Cada uno representa una oportunidad para aprender nuevas tecnologías, mejorar mis habilidades y crear soluciones innovadoras y funcionales.",
   "viewProject": "Ver proyecto",
   "comingSoon": "Próximamente",
   "completed": "Completado",
@@ -11,7 +11,7 @@
   "projectsList": [
     {
       "title": "Piranha Planner - Landing Page",
-      "description": "Una landing page moderna y responsiva desarrollada con React y Vite para presentar las funciones principales de Piranha Planner.",
+      "description": "Landing page moderna y responsiva desarrollada con React y Vite para presentar las funciones principales de Piranha Planner.",
       "link": "https://piranhaplannerl.netlify.app/",
       "repository": "https://github.com/Privado11/PiranhaPlannerLandingPage",
       "tech": ["Vite + React", "Tailwind CSS", "ShadCN"],
@@ -21,7 +21,7 @@
     },
     {
       "title": "Piranha Planner",
-      "description": "Un gestor de tareas colaborativo construido con React y Supabase. Ofrece autenticación de usuarios, compartir tareas, comentarios, subida de archivos, mensajería, notificaciones y estadísticas de productividad.",
+      "description": "Gestor de tareas colaborativo construido con React y Supabase. Incluye autenticación de usuarios, compartir tareas, comentarios, carga de archivos, mensajería, notificaciones y estadísticas de productividad.",
       "link": "https://piranhaplanner.netlify.app/",
       "repository": "https://github.com/Privado11/PiranhaPlanner",
       "tech": ["Vite + React", "Tailwind CSS", "Supabase", "ShadCN"],
@@ -29,16 +29,24 @@
       "release": "beta",
       "imageKey": "piranhaPlannerEs"
     },
-   {
-     "title": "Gestión de Citas Médicas",
-     "description": "Aplicación web planificada para gestionar citas médicas de forma eficiente. Contará con autenticación y control de acceso por roles (administrador, médico, paciente), programación de consultas, historial clínico, notificaciones y paneles personalizados según el tipo de usuario. El frontend estará desarrollado en React y el backend en Spring Boot, siguiendo buenas prácticas de desarrollo fullstack, con enfoque en la seguridad, usabilidad y escalabilidad.",
-     "repository": "",
-     "tech": ["React", "Spring Boot", "Java", "PostgreSQL", "JWT"],
-     "status": "planned",
-     "release": "alpha",
-     "imageKey": "project3Preview"
-   }
-
+    {
+      "title": "Sistema de Gestión de Movilidad — Plataforma Administrativa",
+      "description": "Aplicación profesional desarrollada en Angular para la gestión integral de procesos de movilidad y tránsito. Participé como desarrollador frontend, implementando las interfaces, navegación, formularios, componentes reutilizables y consumo de APIs. La plataforma incluye módulos de comparendos, auditoría, dispositivos, reportes PDF, administración de usuarios y un dashboard general. Se trabajó con arquitectura modular, servicios centralizados y estilos personalizados con CSS puro.",
+      "link": "https://appcentral.shell.sapenlinea.com.co/login",
+      "repository": "",
+      "tech": ["Angular", "TypeScript", "CSS", "REST API", "JWT"],
+      "status": "completed",
+      "release": "stable",
+      "imageKey": "plataformaCentral"
+    },
+    {
+      "title": "Gestión de Citas Médicas",
+      "description": "Aplicación web diseñada para gestionar citas médicas de forma eficiente. Incluirá autenticación y control de acceso por roles (administrador, médico, paciente), programación de consultas, historial clínico, notificaciones y paneles personalizados según cada usuario. El frontend será desarrollado con React y el backend con Spring Boot, siguiendo buenas prácticas de arquitectura fullstack con énfasis en seguridad, usabilidad y escalabilidad.",
+      "repository": "",
+      "tech": ["React", "Spring Boot", "Java", "PostgreSQL", "JWT"],
+      "status": "planned",
+      "release": "alpha",
+      "imageKey": "project3Preview"
+    }
   ]
 }
-  

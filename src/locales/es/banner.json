@@ -3,8 +3,8 @@
     "welcome": "Bienvenido a mi portafolio",
     "greeting": "Hola, soy",
     "name": "Walter Jiménez",
-    "roles": ["Desarrollador Frontend", "Estudiante de Ingeniería de Sistemas"],
-    "description": "Desarrollador con enfoque en frontend y con habilidades complementarias en backend. Apasionado por crear aplicaciones web intuitivas, accesibles y modernas. Me interesa seguir creciendo en el desarrollo web, integrando el diseño de interfaces con la lógica del servidor para ofrecer soluciones completas y funcionales.",
+    "roles": ["Desarrollador Fullstack", "Ingeniero de Sistemas"],
+    "description": "Desarrollador Fullstack con experiencia en la creación de aplicaciones web completas, abarcando tanto el frontend como el backend. Me apasiona construir soluciones modernas, intuitivas y eficientes, integrando interfaces atractivas con una lógica de servidor sólida y bien estructurada. Siempre busco aprender nuevas tecnologías y mejorar continuamente para ofrecer productos de alta calidad.",
     "cta": "Ver mis proyectos",
     "imageAlt": "Imagen de presentación",
     "downloadCV": "Descargar CV"

@@ -3,8 +3,8 @@
     "welcome": "Welcome to my portfolio",
     "greeting": "Hi, I'm",
     "name": "Walter Jiménez",
-    "roles": ["Frontend Developer", "Systems Engineering Student"],
-    "description": "Developer with a focus on frontend and complementary backend skills. Passionate about creating intuitive, accessible, and modern web applications. I am interested in continuing to grow in web development, integrating interface design with server logic to offer complete and functional solutions.",
+    "roles": ["Fullstack Developer", "Systems Engineering Student"],
+    "description": "Fullstack developer with strong frontend expertise and solid complementary backend skills. I am passionate about building intuitive, accessible, and modern web applications. I strive to continuously grow in the web development field, integrating interface design with reliable server-side logic to deliver complete, efficient, and well-structured solutions.",
     "cta": "View my projects",
     "imageAlt": "Header image",
     "downloadCV": "Download CV"

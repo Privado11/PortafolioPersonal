@@ -15,12 +15,14 @@ import landingPageEn from "../assets/landing-page-en.png";
 import landingPageEs from "../assets/landing-page-es.png";
 import piranhaPlannerEn from "../assets/piranha-planner-en.png";
 import piranhaPlannerEs from "../assets/piranha-planner-es.png";
+import plataformaCentral from "../assets/plataforma-central.png";
 
 const imageMap = {
   landingPageEn,
   landingPageEs,
   piranhaPlannerEn,
   piranhaPlannerEs,
+  plataformaCentral,
   project3Preview: null,
 };
 

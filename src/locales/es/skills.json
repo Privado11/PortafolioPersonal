@@ -1,54 +1,66 @@
 {
   "title": "Habilidades",
-  "subtitle": "Como desarrollador frontend, poseo habilidades en el diseño y desarrollo de interfaces de usuario atractivas y funcionales, utilizando mis conocimientos en el área.",
+  "subtitle": "Como desarrollador fullstack, cuento con experiencia en la construcción de aplicaciones web completas, integrando interfaces modernas con lógica backend sólida y bases de datos eficientes.",
   "skillsList": [
     {
       "name": "Java",
       "level": 70,
       "category": "backend",
-      "description": "Programación orientada a objetos y desarrollo backend"
+      "description": "Programación orientada a objetos y desarrollo de servicios backend"
     },
     {
       "name": "Spring Boot",
       "level": 70,
       "category": "backend",
-      "description": "Framework para construir aplicaciones web y APIs REST en Java"
+      "description": "Framework para construir APIs REST y aplicaciones empresariales en Java"
     },
     {
-      "name": ".NET",
+      "name": "Node.js",
+      "level": 75,
+      "category": "backend",
+      "description": "Entorno de ejecución para construir servicios backend escalables"
+    },
+    {
+      "name": "Express.js",
       "level": 70,
       "category": "backend",
-      "description": "Desarrollo de aplicaciones web con C# y ASP.NET Core"
+      "description": "Framework minimalista para crear APIs y aplicaciones backend con Node.js"
     },
     {
       "name": "PostgreSQL",
       "level": 80,
       "category": "database",
-      "description": "Gestión de bases de datos y consultas complejas"
+      "description": "Diseño de bases de datos, modelado relacional y consultas SQL avanzadas"
     },
     {
       "name": "React",
-      "level": 85,
+      "level": 95,
       "category": "frontend",
       "description": "Desarrollo de interfaces modernas y componentes reutilizables"
     },
     {
-      "name": "HTML, CSS, JS",
-      "level": 95,
+      "name": "Angular",
+      "level": 80,
       "category": "frontend",
-      "description": "Fundamentos del desarrollo web y programación frontend"
+      "description": "Framework para construir aplicaciones web escalables con arquitectura modular"
+    },
+    {
+      "name": "HTML, CSS, JS",
+      "level": 100,
+      "category": "frontend",
+      "description": "Fundamentos del desarrollo web y construcción de interfaces funcionales"
     },
     {
       "name": "Tailwind CSS",
       "level": 90,
       "category": "tools",
-      "description": "Framework CSS basado en utilidades para desarrollo rápido de interfaces"
+      "description": "Framework CSS basado en utilidades para creación rápida de interfaces"
     },
     {
       "name": "ShadCN UI",
       "level": 75,
       "category": "tools",
-      "description": "Librería de componentes basada en Radix UI y Tailwind CSS"
+      "description": "Librería de componentes accesibles basada en Radix UI y Tailwind CSS"
     },
     {
       "name": "Supabase",
@@ -57,10 +69,16 @@
       "description": "Backend como servicio con autenticación, base de datos y almacenamiento"
     },
     {
+      "name": "JWT",
+      "level": 80,
+      "category": "tools",
+      "description": "Autenticación y autorización segura basada en tokens"
+    },
+    {
       "name": "Vite",
       "level": 85,
       "category": "tools",
-      "description": "Servidor de desarrollo y empaquetador rápido para aplicaciones web modernas"
+      "description": "Servidor de desarrollo ultrarrápido y empaquetador moderno"
     },
     {
       "name": "Git",

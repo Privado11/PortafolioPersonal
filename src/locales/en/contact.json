@@ -1,13 +1,13 @@
 {
   "title": "Send me a message",
-  "subtitle": "Have a project in mind? I'd love to hear from you!",
+  "subtitle": "Have a project in mind? I’d love to hear from you!",
   "form": {
     "placeholders": {
       "name": "First Name",
       "lastName": "Last Name",
       "email": "Email Address",
       "phone": "Phone Number",
-      "message": "Message"
+      "message": "Write your message here"
     },
     "buttons": {
       "send": "Send Message",
@@ -15,20 +15,20 @@
     },
     "validation": {
       "required": "This field is required",
-      "minLength": "Minimum 2 characters",
-      "invalidName": "Only letters and spaces allowed",
-      "invalidLastName": "Only letters and spaces allowed",
+      "minLength": "Must be at least 2 characters",
+      "invalidName": "Only letters and spaces are allowed",
+      "invalidLastName": "Only letters and spaces are allowed",
       "invalidEmail": "Invalid email address",
-      "invalidPhone": "Invalid phone format",
-      "messageMinLength": "Message must be at least 10 characters",
-      "messageMaxLength": "Message cannot exceed 1000 characters"
+      "invalidPhone": "Invalid phone number format",
+      "messageMinLength": "The message must contain at least 10 characters",
+      "messageMaxLength": "The message cannot exceed 1000 characters"
     },
     "status": {
-      "success": "Message sent successfully!",
-      "error": "Error sending message. Please try again."
+      "success": "Your message has been sent successfully!",
+      "error": "There was an error sending your message. Please try again."
     },
     "hints": {
-      "phone": "Format: +573103456789 or 1234567890"
+      "phone": "Example: +57 3103456789 or 3103456789"
     }
   }
 }

@@ -1,34 +1,34 @@
 {
   "title": "Envíame un mensaje",
-  "subtitle": "¿Tienes un proyecto en mente? ¡Me encantaría saber de ti!",
+  "subtitle": "¿Tienes un proyecto en mente? ¡Me encantará saber de ti!",
   "form": {
     "placeholders": {
       "name": "Nombre",
       "lastName": "Apellido",
-      "email": "Correo Electrónico",
-      "phone": "Número de Teléfono",
-      "message": "Mensaje"
+      "email": "Correo electrónico",
+      "phone": "Número de teléfono",
+      "message": "Escribe tu mensaje aquí"
     },
     "buttons": {
-      "send": "Enviar Mensaje",
+      "send": "Enviar mensaje",
       "sending": "Enviando..."
     },
     "validation": {
-      "required": "Este campo es requerido",
-      "minLength": "Mínimo 2 caracteres",
-      "invalidName": "Solo letras y espacios permitidos",
-      "invalidLastName": "Solo letras y espacios permitidos",
-      "invalidEmail": "Dirección de correo inválida",
+      "required": "Este campo es obligatorio",
+      "minLength": "Debe contener al menos 2 caracteres",
+      "invalidName": "Solo se permiten letras y espacios",
+      "invalidLastName": "Solo se permiten letras y espacios",
+      "invalidEmail": "Correo electrónico inválido",
       "invalidPhone": "Formato de teléfono inválido",
       "messageMinLength": "El mensaje debe tener al menos 10 caracteres",
-      "messageMaxLength": "El mensaje no puede exceder 1000 caracteres"
+      "messageMaxLength": "El mensaje no puede superar los 1000 caracteres"
     },
     "status": {
-      "success": "¡Mensaje enviado exitosamente!",
-      "error": "Error al enviar mensaje. Por favor intenta de nuevo."
+      "success": "¡Tu mensaje ha sido enviado exitosamente!",
+      "error": "Hubo un error al enviar el mensaje. Por favor, inténtalo nuevamente."
     },
     "hints": {
-      "phone": "Formato: +573103456789 o 1234567890"
+      "phone": "Ejemplo: +57 3103456789 o 3103456789"
     }
   }
 }

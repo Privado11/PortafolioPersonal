@@ -1,17 +1,17 @@
 {
   "title": "Projects",
-  "subtitle": "These are some of the projects I have worked on. Each one has been an opportunity to learn new technologies and skills, and to apply them in creating innovative solutions.",
+  "subtitle": "These are some of the projects I have worked on. Each one has been an opportunity to learn new technologies, strengthen my skills, and apply them to build innovative and functional solutions.",
   "viewProject": "View Project",
   "comingSoon": "Coming Soon",
   "completed": "Completed",
   "development": "In Development",
   "showLess": "Show Less",
   "showMore": "Show More",
-  "viewRepository": "View repository",
+  "viewRepository": "View Repository",
   "projectsList": [
     {
-      "title": "Piranha Planner - Landing Page",
-      "description": "A responsive and modern landing page built with React and Vite to present the core features of Piranha Planner.",
+      "title": "Piranha Planner – Landing Page",
+      "description": "A modern and fully responsive landing page built with React and Vite to showcase the core features of Piranha Planner.",
       "link": "https://piranhaplannerl.netlify.app/",
       "repository": "https://github.com/Privado11/PiranhaPlannerLandingPage",
       "tech": ["Vite + React", "Tailwind CSS", "ShadCN"],
@@ -21,7 +21,7 @@
     },
     {
       "title": "Piranha Planner",
-      "description": "A collaborative task manager built with React and Supabase. It supports user authentication, task sharing, comments, file uploads, messaging, notifications, and productivity stats.",
+      "description": "A collaborative task management platform built with React and Supabase. It includes user authentication, task sharing, comments, file uploads, messaging, notifications, and productivity analytics.",
       "link": "https://piranhaplanner.netlify.app/",
       "repository": "https://github.com/Privado11/PiranhaPlanner",
       "tech": ["Vite + React", "Tailwind CSS", "Supabase", "ShadCN"],
@@ -30,8 +30,18 @@
       "imageKey": "piranhaPlannerEn"
     },
     {
+      "title": "Mobility Management System — Administrative Platform",
+      "description": "Professional web platform built with Angular for managing mobility and traffic-related processes. I worked as the frontend developer, implementing all UI screens, navigation, reusable components, forms, and API integration. The system includes modules for traffic ticket management, auditing, devices, PDF report generation, user administration, and a general dashboard. Developed using a modular architecture, centralized services, and custom styling with pure CSS.",
+      "link": "https://appcentral.shell.sapenlinea.com.co/login",
+      "repository": "",
+      "tech": ["Angular", "TypeScript", "CSS", "REST API", "JWT"],
+      "status": "completed",
+      "release": "stable",
+      "imageKey": "plataformaCentral"
+    },
+    {
       "title": "Medical Appointment Management",
-      "description": "Planned web application aimed at efficiently managing medical appointments. It will feature authentication and role-based access (administrator, doctor, patient), consultation scheduling, medical history tracking, notifications, and custom dashboards per user type. The frontend will be built with React and the backend with Spring Boot, following fullstack best practices with a focus on security, usability, and scalability.",
+      "description": "A planned web application designed to efficiently manage medical appointments. It will include authentication and role-based access control (administrator, doctor, patient), consultation scheduling, medical history tracking, notifications, and personalized dashboards for each user type. The frontend will be developed with React and the backend with Spring Boot, following fullstack best practices with a focus on security, usability, and scalability.",
       "repository": "",
       "tech": ["React", "Spring Boot", "Java", "PostgreSQL", "JWT"],
       "status": "planned",

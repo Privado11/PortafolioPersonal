@@ -1,6 +1,6 @@
 {
   "title": "Skills",
-  "subtitle": "As a frontend developer, I possess skills in designing and developing attractive and functional user interfaces using my knowledge in the field.",
+  "subtitle": "As a fullstack developer, I build complete, scalable, and user-centered web applications, combining modern frontend technologies with solid backend and database knowledge.",
   "skillsList": [
     {
       "name": "Java",
@@ -12,61 +12,79 @@
       "name": "Spring Boot",
       "level": 70,
       "category": "backend",
-      "description": "Framework for building web applications and REST APIs in Java"
+      "description": "Framework for building REST APIs and enterprise-level applications"
     },
     {
-      "name": ".NET",
+      "name": "Node.js",
+      "level": 75,
+      "category": "backend",
+      "description": "JavaScript runtime for building scalable backend services"
+    },
+    {
+      "name": "Express.js",
       "level": 70,
       "category": "backend",
-      "description": "Web application development using C# and ASP.NET Core"
+      "description": "Minimalist framework for building APIs and backend applications with Node.js"
     },
     {
       "name": "PostgreSQL",
       "level": 80,
       "category": "database",
-      "description": "Database management and complex queries"
+      "description": "Database design, relational modeling, and complex SQL queries"
     },
     {
       "name": "React",
-      "level": 85,
+      "level": 95,
       "category": "frontend",
-      "description": "Modern interface development and reusable components"
+      "description": "Modern frontend development with reusable components and state management"
+    },
+    {
+      "name": "Angular",
+      "level": 70,
+      "category": "frontend",
+      "description": "Scalable frontend framework based on TypeScript and modular architecture"
     },
     {
       "name": "HTML, CSS, JS",
-      "level": 95,
+      "level": 100,
       "category": "frontend",
-      "description": "Web development fundamentals and frontend programming"
+      "description": "Core web development fundamentals and UI implementation"
     },
     {
       "name": "Tailwind CSS",
       "level": 90,
       "category": "tools",
-      "description": "Utility-first CSS framework for rapid UI development"
+      "description": "Utility-first CSS framework for fast and responsive UI design"
     },
     {
       "name": "ShadCN UI",
       "level": 75,
       "category": "tools",
-      "description": "Component library built on Radix UI and Tailwind CSS"
+      "description": "Accessible and customizable components built on Radix UI and Tailwind"
     },
     {
       "name": "Supabase",
       "level": 80,
       "category": "tools",
-      "description": "Backend as a service with authentication, database, and storage"
+      "description": "Backend-as-a-Service platform with authentication, database, and storage"
+    },
+    {
+      "name": "JWT",
+      "level": 80,
+      "category": "tools",
+      "description": "Secure authentication and authorization for backend APIs"
     },
     {
       "name": "Vite",
       "level": 85,
       "category": "tools",
-      "description": "Fast development server and bundler for modern web apps"
+      "description": "Lightning-fast development server and bundler for modern web applications"
     },
     {
       "name": "Git",
       "level": 90,
       "category": "tools",
-      "description": "Version control for collaborative development and deployment"
+      "description": "Version control for collaborative development and deployment workflows"
     }
   ],
   "categories": {

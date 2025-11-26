@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import { Code, Cpu, Database, Globe } from "lucide-react";
 import { SiShadcnui, SiSupabase, SiVite, SiDotnet } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
 import {
@@ -10,6 +9,8 @@ import {
   BiLogoHtml5,
   BiLogoTailwindCss,
 } from "react-icons/bi";
+import { FaNodeJs, FaAngular } from "react-icons/fa"; 
+import { SiExpress, SiJsonwebtokens } from "react-icons/si";
 import { useTranslation } from "react-i18next";
 import Autoplay from "embla-carousel-autoplay";
 import {
@@ -28,19 +29,22 @@ const Skills = () => {
   const skills = t("skillsList", { returnObjects: true });
   const plugin = useRef(Autoplay({ delay: 2500, stopOnInteraction: true }));
 
-  const iconMap = {
-    Java: BiLogoJava,
-    "Spring Boot": BiLogoSpringBoot,
-    ".NET": SiDotnet,
-    PostgreSQL: BiLogoPostgresql,
-    React: BiLogoReact,
-    "HTML, CSS, JS": BiLogoHtml5,
-    "Tailwind CSS": BiLogoTailwindCss,
-    "ShadCN UI": SiShadcnui,
-    Supabase: SiSupabase,
-    Vite: SiVite,
-    Git: FaGitAlt,
-  };
+ const iconMap = {
+   Java: BiLogoJava,
+   "Spring Boot": BiLogoSpringBoot,
+   JWT: SiJsonwebtokens,
+   "Node.js": FaNodeJs,
+   "Express.js": SiExpress,
+   PostgreSQL: BiLogoPostgresql,
+   React: BiLogoReact,
+   Angular: FaAngular,
+   "HTML, CSS, JS": BiLogoHtml5,
+   "Tailwind CSS": BiLogoTailwindCss,
+   "ShadCN UI": SiShadcnui,
+   Supabase: SiSupabase,
+   Vite: SiVite,
+   Git: FaGitAlt,
+ };
 
   useEffect(() => {
     const section = document.getElementById("skills");

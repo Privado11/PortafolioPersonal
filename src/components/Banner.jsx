@@ -188,7 +188,7 @@ const Banner = () => {
             </div>
           </div>
 
-          <div className="flex justify-center lg:justify-end w-full overflow-hidden">
+          <div className="flex justify-center lg:justify-end w-full">
             <div className="relative w-100 h-100 max-w-full">
               <div
                 className={`banner-image ${
