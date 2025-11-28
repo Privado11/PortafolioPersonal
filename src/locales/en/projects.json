@@ -62,6 +62,7 @@
     {
       "title": "Conecta Ciudad — Backend Services & Governance",
       "description": "Backend for the Conecta Ciudad platform, implementing user identity management, roles and permissions, project creation flows, voting logic, auditing mechanisms, notifications, and fully traceable processes. Built with a strong focus on security, integrity, and transparent data handling. Includes audit logs, validation workflows, and business rules ensuring reliable citizen participation.",
+      "link": "https://conecta-ciudad-api.azurewebsites.net/",
       "repository": "https://github.com/Privado11/conecta_ciudad/tree/dev",
       "tech": [
         "Spring Boot",

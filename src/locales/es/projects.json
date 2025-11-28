@@ -62,6 +62,7 @@
     {
       "title": "Conecta Ciudad — Servicios Backend y Gobernanza",
       "description": "Backend de la plataforma Conecta Ciudad, encargado de la gestión de identidad, roles, creación y validación de proyectos comunitarios, lógica de votación, auditoría y notificaciones. Incluye flujos con trazabilidad completa, controles de seguridad, auditoría de votos, registros de cambios y cumplimiento de reglas de negocio que garantizan transparencia e integridad en la participación ciudadana.",
+      "link": "https://conecta-ciudad-api.azurewebsites.net/",
       "repository": "https://github.com/Privado11/conecta_ciudad/tree/dev",
       "tech": [
         "Spring Boot",
