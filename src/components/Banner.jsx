@@ -117,10 +117,10 @@ const Banner = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-30 sm:py-60 lg:py-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
           <div
-            className={`banner-content space-y-8 w-full overflow-hidden ${
+            className={`banner-content space-y-4 sm:space-y-6 lg:space-y-8 w-full overflow-hidden ${
               isVisible ? "slide-in-left animate" : ""
             }`}
           >
@@ -131,14 +131,14 @@ const Banner = () => {
             </div>
 
             <div className="sm:space-y-2 w-full overflow-hidden">
-              <h1 className="text-4xl lg:text-6xl font-bold leading-tight break-words word-wrap overflow-wrap-break-word hyphens-auto w-full">
+              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight break-words word-wrap overflow-wrap-break-word hyphens-auto w-full">
                 {t("banner.greeting")}{" "}
                 <span className="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
                   {t("banner.name")}
                 </span>
               </h1>
 
-              <div className="text-2xl lg:text-3xl text-gray-300 break-words overflow-hidden w-full h-16 sm:h-20 lg:h-24 flex items-center">
+              <div className="text-xl sm:text-2xl lg:text-3xl text-gray-300 break-words overflow-hidden w-full h-12 sm:h-16 lg:h-24 flex items-center">
                 <span
                   className="animate-pulse inline-block w-full break-words word-wrap overflow-wrap-break-word hyphens-auto"
                   style={{
@@ -153,22 +153,22 @@ const Banner = () => {
               </div>
             </div>
 
-            <p className="text-lg text-gray-300 leading-relaxed max-w-2xl break-words word-wrap overflow-wrap-break-word hyphens-auto w-full">
+            <p className="text-base sm:text-lg text-gray-300 leading-relaxed max-w-2xl break-words word-wrap overflow-wrap-break-word hyphens-auto w-full">
               {t("banner.description")}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 items-start">
               <Button
                 onClick={scrollToProjects}
-                className="group cursor-pointer flex items-center space-x-2 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 px-8 py-4 rounded-full font-medium transition-all duration-300 transform hover:scale-105"
+                className="group cursor-pointer flex items-center space-x-2 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium transition-all duration-300 transform hover:scale-105 text-sm sm:text-base"
               >
                 <span>{t("banner.cta")}</span>
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
 
               <Button
                 onClick={downloadCV}
-                className="group cursor-pointer flex items-center space-x-2 border-2 border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white bg-transparent px-8 py-4 rounded-full font-medium transition-all duration-300 transform hover:scale-105"
+                className="group cursor-pointer flex items-center space-x-2 border-2 border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white bg-transparent px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium transition-all duration-300 transform hover:scale-105 text-sm sm:text-base"
               >
                 <span>{t("banner.downloadCV")}</span>{" "}
                 <svg
@@ -188,8 +188,8 @@ const Banner = () => {
             </div>
           </div>
 
-          <div className="flex justify-center lg:justify-end w-full">
-            <div className="relative w-100 h-100 max-w-full">
+          <div className="flex justify-center lg:justify-end w-full mt-8 lg:mt-0">
+            <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-100 lg:h-100 max-w-full">
               <div
                 className={`banner-image ${
                   isVisible ? "scale-in animate" : ""

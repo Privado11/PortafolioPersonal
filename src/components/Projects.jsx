@@ -8,7 +8,6 @@ const Projects = () => {
 
   const projects = t("projectsList", { returnObjects: true });
 
-
   useEffect(() => {
     const section = document.getElementById("projects");
     if (!section) return;
@@ -35,11 +34,11 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects" className="py-20 px-5">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+    <section id="projects" className="py-12 md:py-20 px-3 sm:px-5">
+      <div className="max-w-7xl mx-auto px-2 sm:px-4 md:px-6 lg:px-8">
+        <div className="text-center mb-10 md:mb-16">
           <h2
-            className={`text-4xl lg:text-5xl font-bold mb-6 transition-all duration-500 ${
+            className={`text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 transition-all duration-500 ${
               isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-8"
@@ -48,7 +47,7 @@ const Projects = () => {
             {t("title")}
           </h2>
           <p
-            className={`text-xl text-gray-300 max-w-4xl mx-auto transition-all duration-500 delay-200 ${
+            className={`text-lg sm:text-xl text-gray-300 max-w-4xl mx-auto px-4 transition-all duration-500 delay-200 ${
               isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-8"
@@ -58,7 +57,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
           {projects.map((project, index) => (
             <div
               key={index}

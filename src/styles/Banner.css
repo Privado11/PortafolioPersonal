@@ -111,10 +111,55 @@
 
 /* Estilos específicos para el texto animado */
 .banner-content .text-2xl span,
-.banner-content .lg\\:text-3xl span {
+.banner-content .lg\:text-3xl span {
   display: inline-block;
   max-width: 100%;
   word-break: break-word;
   overflow-wrap: break-word;
   white-space: normal;
+}
+
+/* Media queries para móviles */
+@media (max-width: 640px) {
+  /* Ajustes para el contenedor principal en móvil */
+  #home {
+    min-height: 100vh;
+    padding-top: 60px;
+  }
+
+  /* Reducir espaciado en móvil */
+  .banner-content {
+    padding: 0;
+  }
+
+  /* Asegurar que el texto no se desborde */
+  .banner-content h1 {
+    font-size: 1.875rem; /* text-3xl */
+    line-height: 1.2;
+  }
+
+  /* Ajustar altura del contenedor de texto animado */
+  .banner-content .text-xl {
+    font-size: 1.25rem;
+    line-height: 1.3;
+  }
+
+  /* Ajustar descripción */
+  .banner-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /* Botones más compactos en móvil */
+  .banner-content button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Media queries para tablets */
+@media (min-width: 641px) and (max-width: 1023px) {
+  #home {
+    padding-top: 80px;
+  }
 }
