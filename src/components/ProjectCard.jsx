@@ -7,6 +7,10 @@ import {
   Zap,
   AlertTriangle,
   Shield,
+  User,
+  Copy,
+  Check,
+  ChevronRight,
 } from "lucide-react";
 import { LuGithub } from "react-icons/lu";
 import { useTranslation } from "react-i18next";
@@ -35,6 +39,8 @@ const ProjectCard = ({ project }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [shouldTruncate, setShouldTruncate] = useState(false);
   const [imageError, setImageError] = useState(false);
+  const [showCredentials, setShowCredentials] = useState(false);
+  const [copiedField, setCopiedField] = useState(null);
   const descriptionRef = useRef(null);
   const contentRef = useRef(null);
 
@@ -58,6 +64,16 @@ const ProjectCard = ({ project }) => {
       window.removeEventListener("resize", checkOverflow);
     };
   }, [project.description]);
+
+  const copyToClipboard = async (text, field) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopiedField(field);
+      setTimeout(() => setCopiedField(null), 2000);
+    } catch (err) {
+      console.error("Failed to copy:", err);
+    }
+  };
 
   const getReleaseStyle = (release) => {
     switch (release) {
@@ -96,34 +112,34 @@ const ProjectCard = ({ project }) => {
     }
   };
 
- const getStatusStyle = (status) => {
-   const styles = {
-     completed: {
-       bgColor: "bg-slate-700/80",
-       textColor: "text-emerald-300",
-       borderColor: "border-slate-600",
-       icon: CheckCircle,
-       label: t("completed"),
-     },
-     planned: {
-       bgColor: "bg-slate-700/80",
-       textColor: "text-blue-300",
-       borderColor: "border-slate-600",
-       icon: Clock,
-       label: t("planned"),
-     },
-   };
+  const getStatusStyle = (status) => {
+    const styles = {
+      completed: {
+        bgColor: "bg-slate-700/80",
+        textColor: "text-emerald-300",
+        borderColor: "border-slate-600",
+        icon: CheckCircle,
+        label: t("completed"),
+      },
+      planned: {
+        bgColor: "bg-slate-700/80",
+        textColor: "text-blue-300",
+        borderColor: "border-slate-600",
+        icon: Clock,
+        label: t("planned"),
+      },
+    };
 
-   return (
-     styles[status] || {
-       bgColor: "bg-slate-700/80",
-       textColor: "text-amber-300",
-       borderColor: "border-slate-600",
-       icon: Clock,
-       label: t("development"),
-     }
-   );
- };
+    return (
+      styles[status] || {
+        bgColor: "bg-slate-700/80",
+        textColor: "text-amber-300",
+        borderColor: "border-slate-600",
+        icon: Clock,
+        label: t("development"),
+      }
+    );
+  };
 
   const releaseStyle = getReleaseStyle(project.release);
   const statusStyle = getStatusStyle(project.status);
@@ -230,10 +246,108 @@ const ProjectCard = ({ project }) => {
           ))}
         </div>
 
+        {project.demoCredentials && project.demoCredentials.length > 0 && (
+          <div className="mb-4 flex-shrink-0">
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                setShowCredentials(!showCredentials);
+              }}
+              className="w-full flex items-center justify-between bg-gradient-to-r from-indigo-600/80 to-purple-600/80 hover:from-indigo-600 hover:to-purple-600 px-4 py-2.5 rounded-lg font-medium transition-all duration-300 transform hover:scale-[1.02] border border-indigo-500/30 group/cred cursor-pointer"
+            >
+              <div className="flex items-center space-x-2">
+                <User className="w-4 h-4" />
+                <span>{t("demoCredentials")}</span>
+              </div>
+              <ChevronRight
+                className={`w-4 h-4 transition-transform duration-300 ${
+                  showCredentials ? "rotate-90" : ""
+                }`}
+              />
+            </button>
+
+            {showCredentials && (
+              <div className="mt-3 space-y-3 animate-in slide-in-from-top-2 duration-300">
+                {project.demoCredentials.map((credential, index) => (
+                  <div
+                    key={index}
+                    className="bg-slate-800/60 border border-slate-700/50 rounded-lg p-3 space-y-2"
+                  >
+                    {credential.role && (
+                      <div className="flex items-center justify-between pb-2 border-b border-slate-700/50">
+                        <span className="text-xs font-semibold text-purple-300 uppercase tracking-wide">
+                          {credential.role}
+                        </span>
+                      </div>
+                    )}
+
+                    <div className="space-y-2">
+                      <div className="flex items-center justify-between group/field">
+                        <div className="flex-1 min-w-0">
+                          <p className="text-xs text-gray-400 mb-0.5">
+                            {t("email")}
+                          </p>
+                          <p className="text-sm text-gray-200 font-mono truncate">
+                            {credential.email}
+                          </p>
+                        </div>
+                        <button
+                          onClick={(e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            copyToClipboard(credential.email, `email-${index}`);
+                          }}
+                          className="ml-2 p-2 hover:bg-slate-700/50 rounded-md transition-colors duration-200"
+                          title={t("copyCredentials")}
+                        >
+                          {copiedField === `email-${index}` ? (
+                            <Check className="w-4 h-4 text-green-400" />
+                          ) : (
+                            <Copy className="w-4 h-4 text-gray-400 group-hover/field:text-gray-200" />
+                          )}
+                        </button>
+                      </div>
+
+                      <div className="flex items-center justify-between group/field">
+                        <div className="flex-1 min-w-0">
+                          <p className="text-xs text-gray-400 mb-0.5">
+                            {t("password")}
+                          </p>
+                          <p className="text-sm text-gray-200 font-mono truncate">
+                            {credential.password}
+                          </p>
+                        </div>
+                        <button
+                          onClick={(e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            copyToClipboard(
+                              credential.password,
+                              `password-${index}`
+                            );
+                          }}
+                          className="ml-2 p-2 hover:bg-slate-700/50 rounded-md transition-colors duration-200"
+                          title={t("copyCredentials")}
+                        >
+                          {copiedField === `password-${index}` ? (
+                            <Check className="w-4 h-4 text-green-400" />
+                          ) : (
+                            <Copy className="w-4 h-4 text-gray-400 group-hover/field:text-gray-200" />
+                          )}
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+
         <div className="flex-shrink-0 mt-auto">
           {project.link || project.repository ? (
             project.link && project.repository ? (
-           
               <div className="flex sm:justify-between flex-col sm:flex-row gap-2 sm:gap-0">
                 <a
                   href={project.link}
@@ -255,7 +369,6 @@ const ProjectCard = ({ project }) => {
                 </a>
               </div>
             ) : (
-             
               <div className="flex justify-center">
                 {project.link ? (
                   <a
@@ -281,7 +394,6 @@ const ProjectCard = ({ project }) => {
               </div>
             )
           ) : (
-            
             <div className="flex justify-center">
               <div className="inline-flex items-center justify-center text-center space-x-2 bg-gray-600/50 text-gray-400 px-4 py-2 rounded-lg font-medium cursor-not-allowed">
                 <Clock className="w-4 h-4" />

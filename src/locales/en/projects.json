@@ -1,13 +1,23 @@
 {
   "title": "Projects",
   "subtitle": "These are some of the projects I have worked on. Each one has been an opportunity to learn new technologies, strengthen my skills, and apply them to build innovative and functional solutions.",
-  "viewProject": "View Project",
+  "viewProject": "Project",
   "comingSoon": "Coming Soon",
   "completed": "Completed",
   "development": "In Development",
   "showLess": "Show Less",
   "showMore": "Show More",
-  "viewRepository": "View Repository",
+  "viewRepository": "Repository",
+  "demoCredentials": "Demo Credentials",
+  "tryDemo": "Try Demo",
+  "hideCredentials": "Hide Credentials",
+  "showCredentials": "Show Credentials",
+  "copyCredentials": "Copy",
+  "copiedCredentials": "Copied!",
+  "username": "Username",
+  "email": "Email",
+  "password": "Password",
+  "role": "Role",
   "projectsList": [
     {
       "title": "Piranha Planner – Landing Page",
@@ -56,7 +66,29 @@
       "tech": ["React", "Vite", "TypeScript", "Tailwind CSS", "ShadCN"],
       "status": "completed",
       "release": "stable",
-      "imageKey": "conectaCiudadFrontend"
+      "imageKey": "conectaCiudadFrontend",
+      "demoCredentials": [
+        {
+          "email": "admin@example.com",
+          "password": "claveSegura123",
+          "role": "Administrador"
+        },
+        {
+          "email": "lider@example.com",
+          "password": "claveSegura123",
+          "role": "Líder Comunitario"
+        },
+        {
+          "email": "ciudadano@example.com",
+          "password": "claveSegura123",
+          "role": "Ciudadano"
+        },
+        {
+          "email": "curator@example.com",
+          "password": "claveSegura123",
+          "role": "Curador"
+        }
+      ]
     },
 
     {
