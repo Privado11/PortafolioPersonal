@@ -47,6 +47,37 @@
       "release": "stable",
       "imageKey": "plataformaCentral"
     },
+
+    {
+      "title": "Conecta Ciudad — Plataforma Frontend",
+      "description": "Desarrollo del frontend de Conecta Ciudad, una plataforma digital para la participación ciudadana y la gobernanza comunitaria. Implementé interfaces, flujos de usuario, pantallas de votación, listados de proyectos, navegación basada en roles, y módulos públicos de transparencia. Enfocado en accesibilidad, trazabilidad visual y una experiencia clara para los ciudadanos.",
+      "link": "https://conecta-ciudad.netlify.app/",
+      "repository": "https://github.com/Privado11/conecta-ciudad",
+      "tech": ["React", "Vite", "TypeScript", "Tailwind CSS", "ShadCN"],
+      "status": "completed",
+      "release": "stable",
+      "imageKey": "conectaCiudadFrontend"
+    },
+
+    {
+      "title": "Conecta Ciudad — Servicios Backend y Gobernanza",
+      "description": "Backend de la plataforma Conecta Ciudad, encargado de la gestión de identidad, roles, creación y validación de proyectos comunitarios, lógica de votación, auditoría y notificaciones. Incluye flujos con trazabilidad completa, controles de seguridad, auditoría de votos, registros de cambios y cumplimiento de reglas de negocio que garantizan transparencia e integridad en la participación ciudadana.",
+      "repository": "https://github.com/Privado11/conecta_ciudad/tree/dev",
+      "tech": [
+        "Spring Boot",
+        "Java",
+        "PostgreSQL",
+        "JWT",
+        "REST API",
+        "Docker",
+        "CI/CD",
+        "Audit Logs"
+      ],
+      "status": "completed",
+      "release": "stable",
+      "imageKey": "conectaCiudadBackend"
+    },
+
     {
       "title": "Gestión de Citas Médicas",
       "description": "Aplicación web diseñada para gestionar citas médicas de forma eficiente. Incluirá autenticación y control de acceso por roles (administrador, médico, paciente), programación de consultas, historial clínico, notificaciones y paneles personalizados según cada usuario. El frontend será desarrollado con React y el backend con Spring Boot, siguiendo buenas prácticas de arquitectura fullstack con énfasis en seguridad, usabilidad y escalabilidad.",

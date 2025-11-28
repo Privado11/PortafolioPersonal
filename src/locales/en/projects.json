@@ -47,11 +47,44 @@
       "release": "stable",
       "imageKey": "plataformaCentral"
     },
+
     {
-      "title": "Medical Appointment Management",
-      "description": "A planned web application designed to efficiently manage medical appointments. It will include authentication and role-based access control (administrator, doctor, patient), consultation scheduling, medical history tracking, notifications, and personalized dashboards for each user type. The frontend will be developed with React and the backend with Spring Boot, following fullstack best practices with a focus on security, usability, and scalability.",
-      "repository": "",
-      "tech": ["React", "Spring Boot", "Java", "PostgreSQL", "JWT"],
+      "title": "Conecta Ciudad — Frontend Platform",
+      "description": "Frontend development of Conecta Ciudad, a digital platform for citizen participation and community project governance. Implemented UI flows, project listings, voting screens, role-based navigation, and public transparency modules. The focus was delivering a clean, accessible and responsive interface that integrates smoothly with backend services and supports traceability and secure participation.",
+      "link": "https://conecta-ciudad.netlify.app/",
+      "repository": "https://github.com/Privado11/conecta-ciudad",
+      "tech": ["React", "Vite", "TypeScript", "Tailwind CSS", "ShadCN"],
+      "status": "completed",
+      "release": "stable",
+      "imageKey": "conectaCiudadFrontend"
+    },
+
+    {
+      "title": "Conecta Ciudad — Backend Services & Governance",
+      "description": "Backend for the Conecta Ciudad platform, implementing user identity management, roles and permissions, project creation flows, voting logic, auditing mechanisms, notifications, and fully traceable processes. Built with a strong focus on security, integrity, and transparent data handling. Includes audit logs, validation workflows, and business rules ensuring reliable citizen participation.",
+      "repository": "https://github.com/Privado11/conecta_ciudad/tree/dev",
+      "tech": [
+        "Spring Boot",
+        "Java",
+        "PostgreSQL",
+        "JWT",
+        "REST API",
+        "Audit Logs",
+        "Docker",
+        "CI/CD"
+      ],
+      "status": "completed",
+      "release": "stable",
+      "imageKey": "conectaCiudadBackend"
+    },
+
+    {
+      "title": "Medical Appointment Management — Fullstack System",
+      "description": "A fullstack system designed to efficiently manage medical appointments with authentication, role-based access (administrator, doctor, patient), scheduling, medical records, notifications, and dashboards. Developed following best practices for clean architecture, security, and scalability, with independent frontend and backend deployments.",
+      "link": "",
+      "repositoryFrontend": "",
+      "repositoryBackend": "",
+      "tech": ["React", "Vite", "Spring Boot", "Java", "PostgreSQL", "JWT"],
       "status": "planned",
       "release": "alpha",
       "imageKey": "project3Preview"

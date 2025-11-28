@@ -16,6 +16,8 @@ import landingPageEs from "../assets/landing-page-es.png";
 import piranhaPlannerEn from "../assets/piranha-planner-en.png";
 import piranhaPlannerEs from "../assets/piranha-planner-es.png";
 import plataformaCentral from "../assets/plataforma-central.png";
+import conectaCiudadFrontend from "../assets/conecta-ciudad-frontend.png";
+import conectaCiudadBackend from "../assets/conecta-ciudad-backend.png";
 
 const imageMap = {
   landingPageEn,
@@ -23,6 +25,8 @@ const imageMap = {
   piranhaPlannerEn,
   piranhaPlannerEs,
   plataformaCentral,
+  conectaCiudadFrontend,
+  conectaCiudadBackend,
   project3Preview: null,
 };
 
@@ -129,14 +133,14 @@ const ProjectCard = ({ project }) => {
   const projectImage = project.imageKey ? imageMap[project.imageKey] : null;
 
   return (
-    <div className="group bg-gray-800 rounded-2xl overflow-hidden transform hover:scale-102 transition-all duration-300 shadow-lg hover:shadow-2xl hover:shadow-purple-500/25 h-full flex flex-col">
+    <div className="group bg-gray-800 rounded-2xl overflow-hidden transform hover:scale-100 transition-all duration-300 shadow-lg hover:shadow-2xl hover:shadow-purple-500/25 h-full flex flex-col">
       <div className="h-48 relative overflow-hidden flex-shrink-0">
         {projectImage && !imageError ? (
           <>
             <img
               src={projectImage}
               alt={project.title}
-              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               onError={() => setImageError(true)}
             />
           </>
@@ -150,7 +154,7 @@ const ProjectCard = ({ project }) => {
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></div>
 
         <div className="absolute bottom-3 left-3 right-3 flex justify-between items-end">
-          <div className="transform group-hover:scale-105 transition-transform duration-300">
+          <div className="transform group-hover:scale-100 transition-transform duration-300">
             <div
               className={`flex items-center space-x-1.5 ${statusStyle.bgColor} ${statusStyle.textColor} px-2.5 py-1.5 rounded-lg text-xs font-medium backdrop-blur-md ${statusStyle.borderColor} border shadow-lg`}
             >
@@ -160,7 +164,7 @@ const ProjectCard = ({ project }) => {
           </div>
 
           {project.release && (
-            <div className="transform group-hover:scale-105 transition-transform duration-300">
+            <div className="transform group-hover:scale-100 transition-transform duration-300">
               <div
                 className={`flex items-center space-x-1.5 ${releaseStyle.bgColor} ${releaseStyle.textColor} px-2.5 py-1.5 rounded-lg text-xs font-medium backdrop-blur-md ${releaseStyle.borderColor} border shadow-lg`}
               >
@@ -207,9 +211,9 @@ const ProjectCard = ({ project }) => {
             >
               <span>{isExpanded ? t("showLess") : t("showMore")}</span>
               {isExpanded ? (
-                <ChevronUp className="w-4 h-4 group-hover/btn:scale-110 transition-transform duration-300" />
+                <ChevronUp className="w-4 h-4 group-hover/btn:scale-105 transition-transform duration-300" />
               ) : (
-                <ChevronDown className="w-4 h-4 group-hover/btn:scale-110 transition-transform duration-300" />
+                <ChevronDown className="w-4 h-4 group-hover/btn:scale-105 transition-transform duration-300" />
               )}
             </button>
           )}
@@ -219,7 +223,7 @@ const ProjectCard = ({ project }) => {
           {project.tech.map((tech, techIndex) => (
             <span
               key={techIndex}
-              className="px-3 py-1.5 bg-slate-700/60 text-slate-300 text-sm rounded-lg border border-slate-600/50 hover:bg-slate-600/60 hover:border-slate-500/50 hover:text-slate-200 transition-all duration-300 transform hover:scale-105 font-medium"
+              className="px-3 py-1.5 bg-slate-700/60 text-slate-300 text-sm rounded-lg border border-slate-600/50 hover:bg-slate-600/60 hover:border-slate-500/50 hover:text-slate-200 transition-all duration-300 transform hover:scale-100 font-medium"
             >
               {tech}
             </span>
@@ -235,7 +239,7 @@ const ProjectCard = ({ project }) => {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center text-center space-x-2 w-full sm:w-auto bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 px-4 py-2 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25"
+                  className="inline-flex items-center justify-center text-center space-x-2 w-full sm:w-auto bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 px-4 py-2 rounded-lg font-medium transition-all duration-300 transform hover:scale-100 hover:shadow-lg hover:shadow-purple-500/25"
                 >
                   <span>{t("viewProject")}</span>
                   <ExternalLink className="w-4 h-4 group-hover:rotate-12 transition-transform duration-300" />
@@ -244,10 +248,10 @@ const ProjectCard = ({ project }) => {
                   href={project.repository}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center text-center space-x-2 w-full sm:w-auto bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-500 hover:to-gray-600 px-4 py-2 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-gray-500/25"
+                  className="inline-flex items-center justify-center text-center space-x-2 w-full sm:w-auto bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-500 hover:to-gray-600 px-4 py-2 rounded-lg font-medium transition-all duration-300 transform hover:scale-100 hover:shadow-lg hover:shadow-gray-500/25"
                 >
                   <span>{t("viewRepository")}</span>
-                  <LuGithub className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
+                  <LuGithub className="w-4 h-4 group-hover:scale-100 transition-transform duration-300" />
                 </a>
               </div>
             ) : (
@@ -258,7 +262,7 @@ const ProjectCard = ({ project }) => {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center text-center space-x-2 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 px-4 py-2 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25"
+                    className="inline-flex items-center justify-center text-center space-x-2 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 px-4 py-2 rounded-lg font-medium transition-all duration-300 transform hover:scale-100 hover:shadow-lg hover:shadow-purple-500/25"
                   >
                     <span>{t("viewProject")}</span>
                     <ExternalLink className="w-4 h-4 group-hover:rotate-12 transition-transform duration-300" />
@@ -268,10 +272,10 @@ const ProjectCard = ({ project }) => {
                     href={project.repository}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center text-center space-x-2 bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-500 hover:to-gray-600 px-4 py-2 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-gray-500/25"
+                    className="inline-flex items-center justify-center text-center space-x-2 bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-500 hover:to-gray-600 px-4 py-2 rounded-lg font-medium transition-all duration-300 transform hover:scale-100 hover:shadow-lg hover:shadow-gray-500/25"
                   >
                     <span>{t("viewRepository")}</span>
-                    <LuGithub className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
+                    <LuGithub className="w-4 h-4 group-hover:scale-100 transition-transform duration-300" />
                   </a>
                 )}
               </div>
